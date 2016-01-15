@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="200dip"
+    android:background="#B5B5B5"
+    android:padding="1dip">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:focusable="false"
+        android:background="#FFF">
+
+
+    </View>
+
+    <ImageButton
+        android:id="@+id/shipment_image"
+        android:layout_width="120dip"
+        android:layout_height="120dip"
+        android:layout_margin="10dip"
+        android:onClick="openShipmentPopup"
+        android:background="@drawable/demo_image" />
+
+    <View
+        android:id="@+id/single_strip_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@+id/shipment_image"
+        android:layout_margin="10dp"
+        android:background="#B5B5B5" />
+
+
+    <TextView
+        android:id="@+id/shipment_address"
+        style="?android:textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="120dip"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@+id/shipment_image"
+        android:layout_marginLeft="130dp"
+        android:text="Joe \n\n123 Address street\nJawahar Nagar \nJaipur 302004" />
+
+    <Button
+        android:id="@+id/shipping_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/single_strip_line"
+        android:layout_alignTop="@+id/single_strip_line"
+        android:background="@android:color/transparent"
+        android:text="Shipping Options"
+        android:onClick="openShippingOptions"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/action_bar_color" />
+
+    <TextView
+        android:id="@+id/shipment_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/shipping_options"
+        android:layout_alignRight="@+id/single_strip_line"
+        android:text="Economy, 3-7 Days"
+        android:textColor="#A4A4A4"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+
+</RelativeLayout>
+
+

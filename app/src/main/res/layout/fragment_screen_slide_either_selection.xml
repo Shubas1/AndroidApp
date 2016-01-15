@@ -1,0 +1,98 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="6dip">
+        <!--  The child Views/Layout to flip -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/slider_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/go_home" />
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/use_facebook_instead"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="50dp"
+                android:background="@color/button_color"
+                android:padding="10dip"
+                android:text="SIGN UP FOR SHYP"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/signin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/use_facebook_instead"
+                android:layout_alignTop="@+id/signup"
+                android:background="@color/button_color"
+                android:padding="10dip"
+                android:text="SIGN IN"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/use_facebook_instead"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:text="USE FACEBOOK INSTEAD?"
+                android:textColor="#FFF" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <ImageButton
+                android:id="@+id/login_with_fb"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="109dp"
+                android:background="@drawable/login_w_fb" />
+
+
+            <Button
+                android:id="@+id/use_email_instead"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:text="USE EMAIL INSTEAD?"
+                android:textColor="#FFF" />
+
+        </RelativeLayout>
+
+        <!--  Layout 2 for 2nd Screen -->
+
+
+    </ViewFlipper>
+
+
+</ScrollView>

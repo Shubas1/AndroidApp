@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="action_bar_color">#4689C8</color>
+    <color name="button_color">#22409A</color>
+    <color name="btn_pickup_confirm">#4EAF8A</color>
+
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/llAddShipment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/add_shipment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text=" + Add Shipment"
+            android:onClick="openAddShipmentController"
+            android:textColor="@color/action_bar_color" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#B5B5B5" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/shipping_item_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llConfirmPickup"
+        android:layout_below="@+id/llAddShipment"
+        android:layout_margin="10dp"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:clickable="true"
+        android:scrollbars="none" />
+
+
+    <LinearLayout
+        android:id="@+id/llConfirmPickup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="#B5B5B5" />
+
+        <Button
+            android:id="@+id/confirm_pickup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@color/btn_pickup_confirm"
+            android:text="PICKUP NOW"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/note"
+            style="?android:textAppearanceSmall"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:gravity="center"
+            android:text="Total charge will be cost of shipping + $5 pickup fee" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

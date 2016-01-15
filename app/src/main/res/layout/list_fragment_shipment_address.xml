@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <EditText
+        android:id="@+id/search_shipment_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/search_24"
+        android:hint="Search Recipient's Address"
+        android:gravity="center"
+        android:layout_alignParentTop="true" />
+
+    <ListView
+        android:id="@+id/shipping_item_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_shipment_address"
+        android:layout_margin="10dp"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10.0sp"
+        android:scrollbars="none" />
+
+
+</RelativeLayout>
+
